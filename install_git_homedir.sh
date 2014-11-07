@@ -7,7 +7,7 @@ installdir="$HOME"
 gitinstalled="unknown"
 
 # Check if git is installed
-if git --version > /del/null 2>&1; then
+if git --version > /dev/null 2>&1; then
     echo "You got git installed. Good for you!"
     gitinstalled=true
 else
