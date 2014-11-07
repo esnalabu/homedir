@@ -174,5 +174,15 @@ PROMPT_COMMAND=prompt_func
 
 # Git prompt function end
 
-# Temp bin dir
+# tmux list sessions
+if [ -z "$TMUX" ]; then
+    TMUX_SESSIONS=$(tmux list-sessions 2>&1 | grep "windows" | wc -l)
+    if [ $TMUX_SESSIONS -ge 1 ]; then
+        echo "These tmux sessions are running:"
+        tmux list-sessions
+        echo -e "Attach with \e[0;36m [ tmux attach -t sessionnumber ] \e[0;0m"
+    fi
+fi
+
+# Home bin dir
 export PATH="~/bin:$PATH"
