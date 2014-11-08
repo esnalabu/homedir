@@ -4,3 +4,4 @@
 !.tmux.conf
 !install_ubuntu_apps.sh
 !install_git_homedir.sh
+!update_git_homedir.sh
