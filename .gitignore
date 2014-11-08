@@ -1,6 +1,7 @@
 *
 !.gitignore
 !.bashrc
+!.bash_profile
 !.tmux.conf
 !install_ubuntu_apps.sh
 !install_git_homedir.sh
