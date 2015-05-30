@@ -21,3 +21,8 @@ then make it executable and run it:
 chmod +x install_git_homedir.sh
 ./install_git_homedir.sh
 ```
+
+To install apps for Ubuntu:
+```
+./install_ubuntu_apps.sh
+```
