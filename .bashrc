@@ -115,6 +115,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Source local definitions
+if [ -f ~/.bashrc_$HOSTNAME ]; then
+  . ~/.bashrc_$HOSTNAME
+fi
+
+
 # User specific aliases and functions
 
 # Git prompt function
@@ -186,3 +192,4 @@ fi
 
 # Home bin dir
 export PATH="~/bin:$PATH"
+
